@@ -1,0 +1,101 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(#BA75F4,#BC08E3 );
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    }
+    body{
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+.retangulo {
+    position: absolute;
+    left: 50px;
+    width: 950px; 
+    height: 350px; 
+    bottom: 100px;
+    background: linear-gradient(#9000FF,#7800B0 );
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.main{
+    width: 150%;
+    max-width: 450px;
+    margin: auto;
+}
+
+.container-box{
+    width: 90%;
+    left: 50px;
+    height: 500px; 
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    width: 150px;
+    height: 250px;
+    margin: 35px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+ 
+h1{
+    width: 70px;
+    height: 55px;
+    margin: -10px;
+    left: 300px;
+    padding: -50px; 
+    bottom: 100px;
+ position: inherit;
+}
+h2{
+    width: 250px;
+    margin: -35px;
+    height: 180px;
+    left: -50px;
+    padding: -50px;
+    bottom: 100px;
+  z-index: 1;
+}
+p{
+    width: 200px;
+    margin: -35px;
+    left: 100px;
+    height: 180px;
+    padding: 10px;
+    bottom: 100px;
+  z-index: 1;
+}
+
+.box img{
+    border-radius: 100%;
+    width: 60%;
+    border:1px solid black;
+}
+
+/*efecto over*/ 
+
+.box:hover{
+    background: #979696;
+    transform: translateY(-90px);
+}
+
+
+
+.main:hover .container-box:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
